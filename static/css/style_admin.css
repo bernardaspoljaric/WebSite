@@ -1,0 +1,245 @@
+body {background-image:url('https://wallpapertag.com/wallpaper/full/0/2/c/124463-blue-watercolor-background-2500x1933-photos.jpg');font-family: "Lato", sans-serif;}
+* { margin: 0px; padding: 0px; }
+a { text-decoration: none; }
+
+/* forms */
+form { width: 60%; margin: 5px auto; padding-bottom: 50px; }
+form input[type=file], input[type=email], input[type=password], input[type=text], 
+form select, form textarea {
+	width: 100%;
+	display: block;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin: 5px auto 10px;
+	border-radius: 3px;
+	box-sizing : border-box;
+	background: transparent;
+	border: 1px solid #3E606F;
+}
+input[type="checkbox"] { height: 20px; float: left; }
+form button { float: right; margin-left: 24%; }
+form input:focus { outline: none; }
+label {	margin-top: 20px; float: left; }
+/* tables */
+table {
+    border-collapse: collapse;
+    /* width: 70%; */
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: whitesmoke;
+}
+th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+th { text-align: center;}
+
+.btn {
+	color: white;
+	background: #4E6166;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	padding: 13px 20px;
+	text-decoration: none;
+}
+/* HEADER */
+.header {
+	padding: 15px 45px;
+	font-family: 'Noto Serif', serif;
+	color: white;
+    background: black;
+    width: 100%;
+}
+.header .logo { width: 50%; float: left; }
+.header .logo h1 { color: white; }
+.header .user-info {
+    width: 15%;
+    margin-top: 10px;
+    float: right;
+    
+}
+.header .logout-btn { color: red; text-decoration: none; }
+.header:after{ content: ""; display: block; clear: both; }
+
+/* DASHBOARD */
+span.box_name {
+    position: relative;
+    top: 40%;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 5px;
+}
+span.number {
+    position: relative;
+    top: 20%;
+    font-size: 72px;
+    color: indianred;
+}
+.container {
+    width: 100%;
+    margin: 5px auto 50px;
+    padding: 20px;
+    margin-left: 3%;
+}
+.container:after { content: ""; display: block; clear: both; }
+.container.dashboard h1 { text-align: center; margin: 25px; }
+.container.dashboard .stats a {
+    display: inline-block;
+    padding: 30px;
+    margin: 5px;
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.container.dashboard .stats a:hover { cursor: pointer; background-color: #E1E1E1; }
+.container.dashboard .buttons {
+    text-align: center;
+}
+
+/* PAGE CONTENT */
+.container.content .menu { width: 16%; float: left; padding: 60px 10px; }
+
+.container.content .menu .card .card-header {
+	padding: 10px;
+	text-align: center;
+	border-radius: 3px 3px 0px 0px;
+	background: darkslategray;
+}
+.container.content .menu .card .card-header h2 { color: white; }
+.container.content .menu .card .card-content a {
+	display: block;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	border-bottom: 1px solid #e4e1e1;
+	color: #444;
+}
+.card-content {
+    background-color: mediumaquamarine;
+}
+.container.content .menu .card .card-content a:hover {
+	padding-left: 20px; background: #F9F9F9; transition: 0.1s;
+}
+
+.container.content .action {
+    width: 35%;
+    float: left;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 5%;
+}
+.container.content .action form { width: 90%; }
+.container.content .action .page-title { margin: 25px; }
+.container.content .action.create-post-div { width: 60%; }
+
+.table-div { float: left; width: 47%; }
+.table-div .message { width: 50%; margin-top: 20px; }
+.table-div table { width: 70%; }
+.table-div a.fa { color: white; padding: 3px; }
+.table-div .edit { background: #004220; }
+.table-div .delete { background: #F70E1A; }
+.table-div .publish { background: red; }
+.table-div .unpublish { background: green; }
+
+.card {
+    border: 3px solid white;
+}
+
+/* PORUKE POGREŠKE */
+.message {
+	width: 100%; 
+    margin-left: 20%; 
+	padding: 10px 0px; 
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	border-radius: 5px; 
+	text-align: center;
+}
+.error {color: #a94442; background: #f2dede; border: 1px solid #a94442; margin-bottom: 20px; }
+.validation_errors p {text-align: left;margin-left: 10px;}
+
+div#cke_1_contents{
+    height: 500px !important;
+}
+.title {
+    margin-top: 10%;
+}
+@media only screen and (max-width: 998px) {
+    .container.content .action {
+        width: 60%;
+        margin-left: 18%;
+        margin-bottom: 50px;
+    }
+    .container.content .menu {
+        width: 50%;
+        padding: 0 !important;
+        text-align: center;
+        margin-left: 22%;
+    }
+    .table-div {
+        width: 81%;
+    }
+    .table-div table {
+        width: 100%;
+        margin-top: 20px;
+    }
+    table {
+        margin-left: 8%;
+        margin-top: 0;
+    }
+    .container.content .action.create-post-div {
+        width: 100%;
+        margin-left: 0;
+    }
+    .container.dashboard .stats a {
+        width: 50%;
+        height: 300px;
+        margin-left: 20%;
+
+    }
+    .comment_section {
+        margin-top: 30% !important;
+    }
+    .comment-wrap{
+        left: 0 !important;
+    }
+  }
+  h3.comm {
+    margin-left: 5%;
+  }
+  p.comment_body {
+    font-size: 1.2em;
+    font-family: 'Averia Serif Libre', cursive;
+  }
+  p.author {
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  textarea.comment-area {
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    width: 70%;
+  }
+  .comment-wrap {
+    background-color: rgb(0,0,0,.2);
+    border: 2px solid white;
+    padding: 20px;
+    position: relative;
+    top: 13px;
+    left: 10%;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    color: white;
+  }
+  .comment_section {
+    margin-top: 5%;
+    margin-left: 20%;
+}  
